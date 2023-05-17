@@ -1,29 +1,271 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "rafael": [
-    {
-      "id": 1,
-      "Nome": "RAFAEL",
-      "Tipo": "Usuario"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  },
-  "login": {
-	  "access_token": "343546787yht5y6hu75g7h47i46u7g547hyh456"
-  }
+	"login": {
+		"status": 200,
+		"access_token": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiOGY5MzIwYzkwMDNjMTFhNWEyMTJkNjcxMWI4Mjg2MzhjZmRhZmVkNjExNWVhYmQ2MDZiNGY5NTQxN2FkYWQyZDBkMzFhMDk3YmM4YTU2MjciLCJpYXQiOjE2ODQzMTk4ODguOTcxNzczLCJuYmYiOjE2ODQzMTk4ODguOTcxNzc3LCJleHAiOjE3MTU5NDIyODguOTY3NTE0LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.HpF0biTN68HYlMm0xDNpQVdh6rz04-5fIPwrMEwKIi0mK9CRvcwLmVRvxjRZXE2W6RjWyymW_v1nuAWY0XBHK6ylwoJ7GoSqsApr5h6gaxCA82f4j-jJD-JwlW5iQdeURtACwmNsPgfI1ytiG6UazDMaR0HJ8bmUYmqWbi5n0jplhgjsH56GvOM4m-uOaXu3B9Ib8IT5EXGIIu7ieckP1AHC7JzwYnqV4QljmPzIqnp6uKPYsI3PW2FY5vNTMastsfD81MCV3I8KG096KrzQ-XSUf5MWIrZ9-dZYxwXr4ePbHRcC_sZzFvKoXsSpm35m-vN1x5tun3SbOr4CYA9b5-LQ-cpMpR8Mme-Yc2m_yo5F4PTIBCnO2SQOCTdip0_cQwNC7PfYHsCuUvB190tfbZTDvzNICVuoLIJivpyOON7cbJg4iyLVVfwIA2QSe4_wve3qauk1vHx4B0wFIuMezQPZgMBomV4HcWQyUFxw55AltlnvnhHeCVbgvYV_l3i0GbL4-gIlC7yfA-wXC_c3pBp9v_qgXuT_kPzrXRHlTdYC_IOL3OoStGu_flOf3_Bl60MNro8jZVsOlTyXQunHWZ0RXkommgq5tZY3jo5YeJOc1D9C8Y91_fRIapdcZ9NnvEAXXXwFZepK8noe8VEaCazCMF5q9Mz1r6mC9h8pYwg"
+	},
+	"reports": [
+		{
+			"title": "Mapa de logística",
+			"id": "logisticsMap",
+			"type": "bar",
+			"data": [
+				{
+					"label": "Perdidas",
+					"value": 20,
+					"color": "255, 103, 116, 236"
+				},
+				{
+					"label": "Separadas",
+					"value": 25,
+					"color": "255, 72, 82, 165"
+				},
+				{
+					"label": "Conferidas",
+					"value": 10,
+					"color": "255, 47, 82, 165"
+				},
+				{
+					"label": "Embarcadas",
+					"value": 5,
+					"color": "255, 22, 25, 51"
+				}
+			]
+		},
+		{
+			"title": "Armazenamento",
+			"id": "warehouseCapacity",
+			"type": "pie",
+			"data": [
+				{
+					"label": 2019,
+					"value": 216,
+					"description": "Caixas foram embarcadas",
+					"color": "255, 103, 116, 236"
+				},
+				{
+					"label": 2020,
+					"value": 118,
+					"description": "Caixas foram embarcadas",
+					"color": "255, 75, 85, 173"
+				},
+				{
+					"label": 2021,
+					"value": 201,
+					"description": "Caixas foram embarcadas",
+					"color": "255, 52, 58, 119"
+				},
+				{
+					"label": 2022,
+					"value": 199,
+					"description": "Caixas foram embarcadas",
+					"color": "255, 18, 20, 41"
+				}
+			]
+		},
+		{
+			"title": "Manutençao de frota",
+			"id": "fleetMaintenance",
+			"type": "pie",
+			"data": [
+				{
+					"label": 2021,
+					"value": 100,
+					"description": "Embarques",
+					"color": "255, 103, 116, 236"
+				},
+				{
+					"label": 2022,
+					"value": 150,
+					"description": "Embarques",
+					"color": "255, 75, 85, 173"
+				},
+				{
+					"label": 2023,
+					"value": 300,
+					"description": "Embarques",
+					"color": "255, 52, 58, 119"
+				}
+			]
+		},
+		{
+			"title": "Status de Entregas",
+			"id": "deliveryTracker",
+			"type": "line",
+			"data": [
+				{
+					"label": 23.1,
+					"value": 220.29,
+					"color": "225, 103, 116, 236"
+				},
+				{
+					"label": 43.2,
+					"value": 110.5,
+					"color": "225, 75, 85, 173"
+				},
+				{
+					"label": 99.3,
+					"value": 90.33,
+					"color": "225, 52, 58, 119"
+				}
+			]
+		},
+		{
+			"title": "Otimizacao",
+			"id": "optimization",
+			"type": "progress",
+			"data": {
+				"value": 20
+			}
+		},
+		{
+			"title": "Performance",
+			"id": "performance",
+			"type": "progress",
+			"data": {
+				"value": 5
+			}
+		}
+	],
+	"filters": [
+		{
+			"label": "Tipo de Transporte",
+			"id": "transport_type",
+			"tipo": "select",
+			"valorDefault": [
+				"Rodoviário",
+				"Ferroviário",
+				"Aéreo",
+				"Marítimo"
+			]
+		},
+		{
+			"label": "Região",
+			"id": "region",
+			"tipo": "multiselect",
+			"valorDefault": [
+				"Norte",
+				"Nordeste",
+				"Centro-Oeste",
+				"Sudeste",
+				"Sul"
+			]
+		},
+		{
+			"label": "Número de Veículos",
+			"id": "num_veichles",
+			"tipo": "input[number]",
+			"valorDefault": "",
+			"Dependencias": []
+		},
+		{
+			"label": "Nome da Rota",
+			"id": "route_name",
+			"tipo": "input[text]",
+			"valorDefault": "",
+			"Dependencias": []
+		},
+		{
+			"label": "Status da Entrega",
+			"id": "delivery_status",
+			"tipo": "select",
+			"valorDefault": [
+				"Em trânsito",
+				"Aguardando coleta",
+				"Entregue",
+				"Cancelado"
+			]
+		},
+		{
+			"label": "shipping_company",
+			"tipo": "multiselect",
+			"valorDefault": [
+				"Transportadora A",
+				"Transportadora B",
+				"Transportadora C"
+			]
+		},
+		{
+			"label": "Número do Pedido",
+			"id": "request_number",
+			"tipo": "input[number]",
+			"valorDefault": "",
+			"Dependencias": []
+		},
+		{
+			"label": "Destinatário",
+			"id": "recipient",
+			"tipo": "input[text]",
+			"valorDefault": "",
+			"Dependencias": []
+		},
+		{
+			"label": "tipo de Armazenamento",
+			"id": "type_of_storage",
+			"tipo": "select",
+			"valorDefault": [
+				"Paletizado",
+				"Granel",
+				"Refrigerado"
+			]
+		},
+		{
+			"label": "Localização",
+			"id": "localization",
+			"tipo": "multiselect",
+			"valorDefault": [
+				"Cidade A",
+				"Cidade B",
+				"Cidade C"
+			]
+		},
+		{
+			"label": "Capacidade Mínima (m³)",
+			"id": "maximum_capacity",
+			"tipo": "input[number]",
+			"valorDefault": "",
+			"Dependencias": []
+		},
+		{
+			"label": "Nome do Armazém",
+			"id": "warehouse_name",
+			"tipo": "input[text]",
+			"valorDefault": "",
+			"Dependencias": []
+		},
+		{
+			"label": "Categoria de Veículo",
+			"id": "vehicle_category",
+			"tipo": "select",
+			"valorDefault": [
+				"Caminhão",
+				"Carreta",
+				"VUC",
+				"Motocicleta"
+			]
+		},
+		{
+			"label": "Marca",
+			"id": "brand",
+			"tipo": "multiselect",
+			"valorDefault": [
+				"Marca A",
+				"Marca B",
+				"Marca C"
+			]
+		},
+		{
+			"label": "Quilometragem Mínima",
+			"id": "minimum_mileage",
+			"tipo": "input[number]",
+			"valorDefault": "",
+			"Dependencias": []
+		},
+		{
+			"label": "Nome do Veículo",
+			"id": "vehicle_name",
+			"tipo": "input[text]",
+			"valorDefault": "",
+			"Dependencias": []
+		}
+	]
 }
